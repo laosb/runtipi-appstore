@@ -2,7 +2,7 @@
   "services": [
     {
       "name": "twitterbridge",
-      "image": "ghcr.io/preloading/twitterapibridge:dev",
+      "image": "ghcr.io/preloading/twitterapibridge:1.0.3",
       "internalPort": 3003,
       "isMain": true,
       "volumes": [

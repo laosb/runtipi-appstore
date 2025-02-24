@@ -7,14 +7,14 @@
   "port": 3003,
   "categories": ["social", "utilities"],
   "description": "This custom server translates Twitter V1 requests to Bluesky for Twitter clients.",
-  "tipi_version": 4,
+  "tipi_version": 5,
   "version": "1.0.3",
   "source": "https://github.com/Preloading/TwitterAPIBridge",
   "exposable": true,
   "force_expose": true,
   "supported_architectures": ["amd64"],
   "created_at": 1740421409183,
-  "updated_at": 1740427464708,
+  "updated_at": 1740427464709,
   "form_fields": [
     {
       "type": "text",
