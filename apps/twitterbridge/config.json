@@ -1,0 +1,25 @@
+{
+  "name": "Twitter Bridge",
+  "id": "twitterbridge",
+  "available": true,
+  "short_desc": "A Twitter v1 API server to Bluesky Bridge.",
+  "author": "preloading",
+  "port": 3000,
+  "categories": ["social", "utilities"],
+  "description": "This custom server translates Twitter V1 requests to Bluesky for Twitter clients.",
+  "tipi_version": 1,
+  "version": "v1.0.3",
+  "source": "https://github.com/Preloading/TwitterAPIBridge",
+  "exposable": true,
+  "supported_architectures": ["amd64"],
+  "created_at": 1740421409183,
+  "updated_at": 1740421409183,
+  "form_fields": [
+    {
+      "type": "text",
+      "label": "CDN URL Prefix",
+      "required": true,
+      "env_variable": "TWITTER_BRIDGE_CDN_URL"
+    }
+  ]
+}
