@@ -2,7 +2,7 @@ version: "3.9"
 services:
   twitterbridge: # Should be exact same name as "id" field in config.json
     container_name: twitterbridge # Should be exact same name as "id" field in config.json
-    image: ghcr.io/preloading/twitterapibridge:sha256-cd089055ff1a496f1c6659ada20650a217db75a99be343660a20892d506ea874 # Try to avoid "latest" tag. As it may break configs in the future.
+    image: ghcr.io/preloading/twitterapibridge:dev # Try to avoid "latest" tag. As it may break configs in the future.
     restart: unless-stopped # Do not change this
     environment:
       - TZ=${TZ} # Can use any env variable. See "environment variables" section in the docs
