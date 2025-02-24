@@ -1,0 +1,25 @@
+{
+  "services": [
+    {
+      "name": "twitterbridge",
+      "image": "ghcr.io/preloading/twitterapibridge:dev",
+      "internalPort": 3003,
+      "isMain": true,
+      "volumes": [
+        {
+          "hostPath": "${APP_DATA_DIR}/data/config",
+          "containerPath": "/config",
+          "readOnly": false
+        }
+      ],
+      "environment": {
+        "TWITTER_BRIDGE_DATABASE_TYPE": "sqlite",
+        "TWITTER_BRIDGE_DATABASE_PATH": "/config/database/sqlite.db",
+        "TWITTER_BRIDGE_CDN_URL": "${TWITTER_BRIDGE_CDN_URL}",
+        "TWITTER_BRIDGE_SERVER_PORT": "3000",
+        "TWITTER_BRIDGE_TRACK_ANALYTICS": "true",
+        "TWITTER_BRIDGE_DEVELOPER_MODE": "false"
+      }
+    }
+  ]
+}
